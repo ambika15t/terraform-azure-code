@@ -1,0 +1,25 @@
+15041980t/saideek
+
+
+kubectl expose pod myapp-pod  --type=NodePort --port=80 --target-port=80 --name=myapp-pod 
+
+kubectl expose pod mypython-77c47448f9-fvz69 --type=LoadBalancer --port=9001 --target-port=9001 --name=mypython-77c47448f9-fvz69 
+
+
+kubectl expose deployment myapp-pod  --type=LoadBalancer --port=9001 --target-port=9001
+kubectl expose deployment mypython-77c47448f9-fvz69 --type=LoadBalancer --port=9001 --target-port=9001
+
+kubectl delete svc myenquiry-testproject-55f4695b85-srdzq
+
+
+15041980t/saideek:python-project
+
+myapp-service
+
+
+
+kubectl expose pod myfirstproject-tamm-app-8c4b67f66-2kgjz --type=NodePort --port=80 --target-port=80 --name=myfirstproject-tamm-app-8c4b67f66-2kgjz
+kubectl expose pod myenquiry-testproject --type=LoadBalancer --port=80 --target-port=80 --name=myenquiry-testproject 
+
+
+kubectl describe svc nginx

@@ -1,0 +1,16 @@
+mykeyvault-rg
+mykeyvault-c
+az group create --name mykeyvault-rg --location eastus
+
+az aks create --name mykeyvault-c -g mykeyvault-rg --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+
+tamm-app-rg
+
+
+az aks create --name keyvault-demo-cluster -g keyvault-demo --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+
+283cb5cf-8ce8-4953-afc2-739ad1f40692
+
+az aks create  -g keyvault-demo --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+
+az aks create --resource-group RESOURCE_GROUP_NAME --name CLUSTER_NAME --node-count NODE_COUNT --enable-vmss --generate-ssh-keys

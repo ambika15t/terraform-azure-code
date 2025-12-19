@@ -1,0 +1,32 @@
+az aks create --name keyvault-demo-cluster -g keyvault-demo --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+
+az aks create --name keyvault-demoo-cluster -g tamm-aks-rg --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+
+
+az aks create --name keyvault-demo-cluster -g keyvault-demo  --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity --generate-ssh-keys
+
+kubectl config current-context
+
+az aks get-credentials --resource-group tamm-aks-rg --name keyvault-demoo-cluster
+
+kubectl get pods -n kube-system -l 'app in (secrets-store-csi-driver,secrets-store-provider-azure)' -o wide
+
+az keyvault create -n aks-demo-tamm -g tamm-aks-rg -l centerindia --enable-rbac-authorization
+
+ demo-cluster
+
+demo-rg
+Southeast Asia
+
+
+az aks create --name demo-cluster -g demo-rg --node-count 1 --enable-addons azure-keyvault-secrets-provider --enable-oidc-issuer --enable-workload-identity
+
+az aks get-credentials --resource-group demo-rg --name demo-cluster
+
+verify
+kubectl config current-context
+
+kubectl get pods -n kube-system -l 'app in (secrets-store-csi-driver,secrets-store-provider-azure)' -o wide
+
+
+az keyvault create -n aks-demo-tamm -g demo-rg -l Southeast Asia --enable-rbac-authorization

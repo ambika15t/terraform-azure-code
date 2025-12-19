@@ -1,0 +1,24 @@
+Corretnt -- codedeply agent  24
+ 1  apt-get update -y
+    2  sudo apt-get update -y
+    3  sudo apt-get install ruby-full ruby-webrick wget -y
+    4  cd /tmp
+    5  wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+    6  ls
+    7  mkdir codedeploy
+    8  sudo chmod +x install
+    9  sudo ./install auto
+   10  history
+   11 sudo service codedeploy-agent status
+#this is correct not requuie mkdir
+ 1  apt-get update -y
+    2  sudo apt-get update -y
+    3  sudo apt-get install ruby-full ruby-webrick wget -y
+    4  cd /tmp
+    5  wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
+    6  ls
+    8  sudo chmod +x install
+    9  sudo ./install auto
+   10  history
+   11 sudo service codedeploy-agent status
+
